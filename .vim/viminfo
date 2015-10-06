@@ -7,6 +7,9 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/listchar
+
 # Command Line History (newest to oldest):
 :wq
 :set list!
@@ -14,6 +17,8 @@
 :q
 
 # Search String History (newest to oldest):
+?/listchar
+?/list
 
 # Expression History (newest to oldest):
 
@@ -57,19 +62,22 @@
 "k	CHAR	0
 	j:wq:wqjkkkjj:wq
 ""-	CHAR	0
-	"
+	$
 
 # File marks:
 '0  1  0  ~/.vimrc
-'1  21  28  ~/.vimrc
-'2  20  11  ~/.vimrc
-'3  1  0  ~/.vinrc
-'4  1  0  ~/.vimrc
-'5  3  0  ~/test
-'6  35  9  ~/.tmux
+'1  35  20  ~/.vimrc
+'2  21  28  ~/.vimrc
+'3  20  11  ~/.vimrc
+'4  1  0  ~/.vinrc
+'5  1  0  ~/.vimrc
+'6  3  0  ~/test
+'7  35  9  ~/.tmux
 
 # Jumplist (newest first):
 -'  1  0  ~/.vimrc
+-'  35  20  ~/.vimrc
+-'  22  0  ~/.vimrc
 -'  21  28  ~/.vimrc
 -'  20  11  ~/.vimrc
 -'  1  0  ~/.vinrc
@@ -168,8 +176,8 @@
 
 > ~/.vimrc
 	"	1	0
-	^	1	2
-	.	1	0
+	^	35	20
+	.	35	20
 	+	1	0
 	+	1	0
 	+	1	0
@@ -183,6 +191,7 @@
 	+	1	0
 	+	21	28
 	+	1	0
+	+	35	20
 
 > ~/.vinrc
 	"	1	0
