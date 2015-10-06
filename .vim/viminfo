@@ -8,8 +8,9 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:q!
 :wq
+:set list!
+:q!
 :q
 
 # Search String History (newest to oldest):
@@ -21,27 +22,170 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"1	LINE	0
+	"
+"2	LINE	0
+	"More to be added soon.
+"3	LINE	0
+	"
+"4	LINE	0
+	" source $VIMRUNTIME/vimrc_example.vim
+	" source $VIMRUNTIME/mswin.vim
+	"
+	"""set diffexpr=MyDiff()
+	"""function MyDiff()
+	"""  let opt = '-a --binary '
+	"""  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+	"""  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+	"""  let arg2 = v:fname_new
+	"""  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+	"""  let arg3 = v:fname_out
+	"""  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+	"""  let eq = ''
+	"""  if $VIMRUNTIME =~ ' '
+	"""    if &sh =~ '\<cmd'
+	"""      let cmd = '""' . $VIMRUNTIME . '\diff"'
+	"""      let eq = '"'
+	"""    else
+	"""      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+	"""    endif
+	"""  else
+	"""    let cmd = $VIMRUNTIME . '\diff'
+	"""  endif
+	"""  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+	"endfunction
 "k	CHAR	0
 	j:wq:wqjkkkjj:wq
+""-	CHAR	0
+	"
 
 # File marks:
-'0  3  0  ~/test
-'1  35  9  ~/.tmux
-'2  1  0  ~/.vimrc
+'0  1  0  ~/.vimrc
+'1  21  28  ~/.vimrc
+'2  20  11  ~/.vimrc
+'3  1  0  ~/.vinrc
+'4  1  0  ~/.vimrc
+'5  3  0  ~/test
+'6  35  9  ~/.tmux
 
 # Jumplist (newest first):
+-'  1  0  ~/.vimrc
+-'  21  28  ~/.vimrc
+-'  20  11  ~/.vimrc
+-'  1  0  ~/.vinrc
 -'  3  0  ~/test
 -'  1  0  ~/test
 -'  35  9  ~/.tmux
 -'  1  12  ~/.tmux
--'  1  0  ~/.vimrc
--'  1  0  ~/.vimrc
 -'  35  9  ~/.tmux
 -'  1  12  ~/.tmux
--'  1  0  ~/.vimrc
--'  1  0  ~/.vimrc
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  1  0  ~/.vinrc
+-'  4  0  ~/.vimrc
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  35  9  ~/.tmux
+-'  1  12  ~/.tmux
+-'  3  0  ~/test
+-'  1  0  ~/test
+-'  35  9  ~/.tmux
+-'  1  0  ~/.vinrc
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	"	1	0
+	^	1	2
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+	+	21	25
+	+	20	10
+	+	1	0
+	+	21	28
+	+	1	0
+
+> ~/.vinrc
+	"	1	0
 
 > ~/test
 	"	3	0
@@ -55,6 +199,3 @@
 	.	1	12
 	+	35	0
 	+	1	12
-
-> ~/.vimrc
-	"	1	0
