@@ -23,14 +23,25 @@ function MyDiff()
   endif
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
-
+"
 "Personnal Settings.
 "More to be added soon.
-execute pathogen#infect()
- filetype plugin indent on
-
+"
+"
+" from Getting Solarized Colors right
+"
+set nocompatible
+set t_Co=16
+call pathogen#infect()
 syntax on
+set background=dark
+colorscheme solarized
+filetype plugin indent on
+set cursorline
+set colorcolumn=80
+"
 "Set the 'leader' key to spacebar
+"
 let mapleader = "\<Space>"
 
 "Map some actions
@@ -54,14 +65,10 @@ set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
 " set smartcase
 " set showmatch
 " set vb
-set viminfo+=n$VIM/_viminfo
+set viminfo+=n~/.vim/viminfo
 " set noerrorbells
 set history=1000
 set undolevels=1000
 
 "set up the geopak.vim file to be read if the .ilv extension is used
 autocmd BufRead,BufNewFile *.ilv set filetype=geopak
-"add  solorized colors
-syntax enable
-set background=dark
-colorscheme solarized
