@@ -32,7 +32,7 @@ set guifont=Consolas:h12
 set nu
 set relativenumber
 set list
-set listchars=eol:¬,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
+set listchars=eol:¬,tab:»\ ,trail:.,extends:>,precedes:<,nbsp:_
 " set hidden
 " set ignorecase
 " set smartcase
