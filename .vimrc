@@ -16,8 +16,11 @@ set colorcolumn=80
 let mapleader = "\<Space>"
 "
 " Map some actions
-"
-nnoremap <leader>w :%s/\s\+$//<CR>
+" strip trailing whitespace
+nnoremap <leader>w :%s/\s\+$//e<CR>
+" strip blank line
+nnoremap <leader>b :g/^$/d<CR>
+" toggle the showing of tabs, ends line, etc
 nmap <leader>l :set list!<CR>
 "
 "Set the status line options. Make it show more information
