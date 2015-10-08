@@ -3,7 +3,8 @@
 "
 set nocompatible
 set t_Co=16
-call pathogen#infect()
+filetype off " turn off filetype until pathogen is called
+execute pathogen#infect()
 syntax on
 set background=dark
 colorscheme solarized
