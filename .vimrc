@@ -7,7 +7,9 @@ call pathogen#infect()
 syntax on
 set background=dark
 colorscheme solarized
-filetype plugin indent on
+if version >= 600
+	filetype plugin indent on
+endif
 set cursorline
 set colorcolumn=80
 "
@@ -68,3 +70,4 @@ if has("autocmd")
 	" Treat .rss files as XML
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
+"
