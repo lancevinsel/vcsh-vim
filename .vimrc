@@ -23,7 +23,7 @@ let mapleader = "\<Space>"
 nnoremap <leader>b :g/^$/d<CR>
 " toggle the showing of tabs, ends line, etc
 nmap <leader>l :set list!<CR>
-" open NERDTree
+" open NERDTree - the NERDTree options are at the bottom os this file
 nnoremap <leader>n :NERDTree<CR>
 " strip trailing whitespace
 nnoremap <leader>w :%s/\s\+$//e<CR>
@@ -73,4 +73,8 @@ if has("autocmd")
 	" Treat .rss files as XML
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
+"
+" NERDTree options
+"
+let NERDTreeShowHidden=1
 "
