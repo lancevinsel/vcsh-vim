@@ -21,10 +21,15 @@ let mapleader = "\<Space>"
 " Map some actions
 " strip blank line
 nnoremap <leader>b :g/^$/d<CR>
+" Set the easymotion j and k functions to <leader>j and k
+nmap <leader>j <plug>(easymotion-j)
+nmap <leader>k <plug>(easymotion-k)
 " toggle the showing of tabs, ends line, etc
 nmap <leader>l :set list!<CR>
 " open NERDTree - the NERDTree options are at the bottom os this file
 nnoremap <leader>n :NERDTree<CR>
+" Set the easymotion s function to <leader>s
+nmap <leader>s <plug>(easymotion-s2)
 " strip trailing whitespace
 nnoremap <leader>w :%s/\s\+$//e<CR>
 "
