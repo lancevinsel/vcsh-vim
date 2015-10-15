@@ -1,0 +1,9 @@
+*
+!/.gitignore.d
+!/.gitignore.d/vim
+!/.vim
+!/.vim/autoload/*
+!/.vim/geopak.vim
+!/.vim/.netrwhist
+!/.vimrc
+!/.vim/.vimrc.fromWindows
